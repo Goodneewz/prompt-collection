@@ -1,1 +1,107 @@
+# meeting assistant 
 
+**Description:** 
+  Analyze a meeting transcript and provide request information 
+
+**The Prompt:**
+You are a meeting assistant.
+
+Analyze the meeting transcript and provide:
+
+1. SUMMARY (2-3 sentences about what the meeting covered)
+
+2. ACTION ITEMS (list each task with owner and deadline)
+   Format: "- [OWNER]: [Task] - Due: [Date]"
+
+3. DECISIONS MADE (list any decisions the team agreed on)
+
+4. FOLLOW-UP EMAIL (professional email summarizing the meeting)
+
+Be specific. Include names and dates mentioned.
+
+
+
+---
+
+  
+**Example Use:** 
+
+# Sample Meeting Transcript
+
+**Meeting:** Weekly Marketing Team Sync
+**Date:** June 12, 2025
+**Time:** 10:00 AM - 10:30 AM
+**Attendees:** Sarah (Team Lead), Mike, Jessica, David
+
+---
+
+**Sarah:** Alright, let's get started. First up, where are we on the Q3 campaign?
+
+**Mike:** The social media assets are about 80% done. We're just waiting on final copy approval from the brand team.
+
+**Sarah:** When do you expect that?
+
+**Mike:** Should have it by end of day tomorrow.
+
+**Jessica:** I can jump in once that's ready. I'll need about two days to finalize the paid ads.
+
+**Sarah:** Perfect. David, how's the landing page coming?
+
+**David:** It's built and in staging. Just need the final product images from the design team. I pinged them yesterday but haven't heard back.
+
+**Sarah:** I'll follow up with them today. Anything blocking anyone else?
+
+**Jessica:** Budget approval for the influencer partnership is still pending.
+
+**Sarah:** Right, I'll escalate that to Lisa this afternoon.
+
+---
+
+# Meeting Analysis
+
+## 1. SUMMARY
+
+The Weekly Marketing Team Sync on June 12, 2025 focused on the status of the Q3 campaign. The team reviewed progress on social media assets, paid ads, and the landing page, identifying blockers related to pending approvals from the brand team, design team, and budget approval for an influencer partnership. Sarah committed to following up on outstanding items to keep the project moving forward.
+
+---
+
+## 2. ACTION ITEMS
+
+- **Sarah:** Follow up with design team regarding product images - Due: June 12, 2025
+- **Sarah:** Escalate influencer partnership budget approval to Lisa - Due: June 12, 2025 (afternoon)
+- **Mike:** Obtain final copy approval from brand team - Due: June 13, 2025
+- **Jessica:** Finalize paid ads after social assets are ready - Due: June 15, 2025
+
+---
+
+## 3. DECISIONS MADE
+
+- Jessica will begin paid ad work immediately once Mike receives copy approval
+- Sarah will handle the escalation to unblock both the design assets and budget approval
+- The landing page will remain in staging until product images are delivered
+
+---
+
+## 4. FOLLOW-UP EMAIL
+
+**Subject:** Marketing Team Sync Recap – June 12, 2025
+
+Hi Team,
+
+Thank you for today's meeting. Here's a quick summary:
+
+**Q3 Campaign Status:**
+- Social media assets are 80% complete; copy approval expected by EOD June 13 (Mike)
+- Paid ads will be finalized within two days of asset approval (Jessica)
+- Landing page is built and staged; awaiting product images from design (David)
+
+**Action Items:**
+- Sarah → Follow up with design team today for product images
+- Sarah → Escalate influencer budget approval to Lisa this afternoon
+- Mike → Secure copy approval by June 13
+- Jessica → Complete paid ads by June 15
+
+Please reach out if you have any blockers. Let's keep the momentum going!
+
+Best,
+Sarah
