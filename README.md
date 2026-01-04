@@ -1,2 +1,2 @@
-# prompt-collection
-a collection of prompt sample for proof of work 
+# prompt-portfolio
+a collection of AI prompts for my proof of work 
