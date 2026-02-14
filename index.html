@@ -1,92 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Goodneewz Prompt Portfolio – 150+ Real Prompts from My Notion</title>
-  <meta name="description" content="The complete public version of my private Notion prompt vault – ChatGPT, Claude, Midjourney, Marketing, Coding & more."/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <style>
-    :root{--bg:#0f0f0f;--card:#1a1a1a;--text:#e0e0e0;--accent:#00ff9d;--border:#333;}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;}
-    header{background:linear-gradient(135deg,#000,#111);padding:4rem 1rem;text-align:center;}
-    h1{margin:0;font-size:3.2rem;background:linear-gradient(90deg,#fff,var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-    .container{max-width:1300px;margin:auto;padding:2rem;}
-    .search{width:100%;max-width:700px;margin:2rem auto;padding:1rem 1.5rem;font-size:1.1rem;border-radius:12px;border:1px solid var(--accent);background:#111;color:#fff;}
-    .filters{margin:1rem 0;text-align:center;}
-    .filters button{margin:0.4rem;padding:0.6rem 1.2rem;background:#222;border:1px solid #444;border-radius:50px;cursor:pointer;transition:0.3s;}
-    .filters button.active{background:var(--accent);color:#000;border-color:var(--accent);}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:1.5rem;margin-top:2rem;}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1.5rem;transition:0.3s;}
-    .card:hover{border-color:var(--accent);transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,255,157,0.1);}
-    .category{font-size:0.85rem;color:var(--accent);font-weight:600;margin-bottom:0.5rem;}
-    .title{font-size:1.35rem;margin:0.5rem 0;font-weight:600;}
-    .desc{color:#bbb;font-size:0.95rem;margin:1rem 0;}
-    .prompt{background:#111;padding:1rem;border-radius:8px;font-family:monospace;font-size:0.94rem;margin:1rem 0;max-height:200px;overflow-y:auto;border:1px solid #333;}
-    .example{background:#0a1a0a;padding:1rem;border-left:4px solid var(--accent);font-size:0.92rem;margin:1rem 0;border-radius:0 8px 8px 0;}
-    .copy{background:var(--accent);color:#000;border:none;padding:0.5rem 1rem;border-radius:8px;cursor:pointer;font-weight:600;float:right;}
-    .copy:hover{background:#00cc7a;}
-    .tags{font-size:0.8rem;margin-top:1rem;}
-    .tags span{background:#222;padding:0.3rem 0.7rem;border-radius:50px;margin-right:0.5rem;}
-    footer{text-align:center;padding:4rem 1rem;border-top:1px solid var(--border);margin-top:5rem;}
-    .whatsapp{display:inline-block;background:#25D366;color:#fff;padding:1rem 2.5rem;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.1rem;margin:1rem;}
-    @media(max-width:768px){.grid{grid-template-columns:1fr;}}
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>Goodneewz Prompt Portfolio</h1>
-  <p style="font-size:1.4rem;max-width:800px;margin:1rem auto;opacity:0.9;">
-    The complete public mirror of my private Notion vault • 150+ expert prompts with real examples
-  </p>
-</header>
-
-<div class="container">
-  <input type="text" class="search" id="search" placeholder="🔍 Search anything… (e.g. “cold email”, “midjourney portrait”, “python”) " onkeyup="filter()"/>
-
-  <div class="filters">
-    <button class="active" onclick="filterCategory('all')">All</button>
-    <button onclick="filterCategory('ChatGPT')">ChatGPT</button>
-    <button onclick="filterCategory('Claude')">Claude</button>
-    <button onclick="filterCategory('Midjourney')">Midjourney</button>
-    <button onclick="filterCategory('Marketing')">Marketing</button>
-    <button onclick="filterCategory('Coding')">Coding</button>
-    <button onclick="filterCategory('Personal')">Personal</button>
-  </div>
-
-  <div class="grid" id="grid">
-
-<!-- ==================== EXACT NOTION CONTENT STARTS HERE ==================== -->
-
-    <!-- ChatGPT → Twitter Thread Master -->
-    <div class="card" data-category="ChatGPT">
-      <div class="category">ChatGPT / GPT-4o</div>
-      <div class="title">Twitter Thread Master v3</div>
-      <div class="desc">Generates complete 10–15 tweet viral threads with hooks, proof, CTA, and perfect formatting.</div>
-      <pre class="prompt">Act as a world-class Twitter ghostwriter who has written threads with 10M+ impressions.
-
-Create a complete Twitter thread about [TOPIC] that does the following:
-1. Starts with a hook that stops scroll in <3 seconds
-2. Uses curiosity gaps between every tweet
-3. Includes at least 2 surprising statistics
-4. Has social proof or personal story
-5. Ends with a strong call-to-action
-
-Rules:
-- 10–15 tweets maximum
-- Use thread formatting (1/15, 2/15 etc.)
-- Add relevant emojis naturally
-- Keep each tweet under 280 characters
-
-Topic: [INSERT YOUR TOPIC]</pre>
-      <div class="example"><strong>Example output snippet:</strong><br>1/12 I made $127k in 7 days using a stupid-simple ChatGPT prompt.<br><br>Most people think you need ads or a big audience.<br><br>They’re wrong.<br><br>Here’s exactly how I did it (zero followers → six figures): 👇</div>
-      <div class="tags"><span>twitter</span><span>viral</span><span>thread</span><span>growth</span></div>
-      <button class="copy" onclick="copyPrompt(this)">Copy Prompt</button>
-    </div>
-
-    <!-- Midjourney → Photorealistic Portrait -->
+{
+  "fullName": "ude favour",
+  "brandName": "desparkking",
+  "logoInitials": "dp",
+  "tagline": "Prompt Engineer | High-Ticket Sales Closer | Tech Enthusiast",
+  "profilePhotoUrl": "6dea05383f8f2ce729458d4d52515ca.jpg",
+  "heroHeadlineLine1": "I engineer",
+  "heroHeadlineLine2": "precision prompts",
+  "heroHeadlineLine3": "that deliver results.",
+  "heroSubtitle": "A prompt engineer specializing in crafting high-performance prompts that unlock the full potential of large language models — helping businesses automate smarter, communicate clearer, and scale faster",
+  "availabilityStatus": "available",
+  "availabilityText": "Available for your work",
+  "primaryCtaText": "View My Work",
+  "primaryCtaLink": "#https://www.notion.so/invite/59083c0bdc56760a8dd2e5d45af43f7abcbcd8bf ",
+  "secondaryCtaText": "",
+  "secondaryCtaLink": "",
+  "stats": [
+    {
+      "number": "10+",
+      "label": "projects delivered "
+    },
+    {
+      "number": "",
+      "label": ""
+    },
+    {
+      "number": "",
+      "label": ""
+    },
+    {
+      "number": "",
+      "label": ""
+    }
+  ],
+  "marqueeItems": [],
+  "aboutHeading": "Passionate about engineering ",
+  "aboutHeadingHighlight": "smarter AI interactions",
+  "aboutParagraph1": "Hi, I'm use favour — a prompt engineer based in Nigeria. Wit hands-on experience working with large language models, I help businesses, creators, and teams unlock the full potential of AI. From crafting precision system prompts to designing end-to-end AI-powered workflows, I specialize in turning vague ideas into structured, high-performing prompts that deliver consistent, reliable results. I've worked across industries including tech, marketing, education, and e-commerce — always with one goal: making AI actually useful.",
+  "aboutParagraph2": "I believe the gap between a mediocre AI output and an exceptional one is never the model — it's the prompt. My approach is rooted in clarity, structure, and deep understanding of how language models think. Every prompt I engineer is intentional. I obsess over token efficiency, output consistency, and edge-case handling because details matter. Whether I'm building a custom GPT, designing a multi-step prompt chain, or optimizing an existing AI workflow, I treat every project as a system to be architected — not just a sentence to be written.",
+  "aboutParagraph3": "",
+  "location": "Abakaliki, Nigeria ",
+  "yearsExperience": "",
+  "techStack": [],
+  "skillCards": [
+    {
+      "iconType": "brain",
+      "title": "Prompt Engineering ",
+      "description": "System prompts, few-shot, chain-of-thought"
+    },
+    {
+      "iconType": "pen-tool",
+      "title": "AI Content & Image Generation",
+      "description": "Midjourney, DALL·E, Stable Diffusion"
+    },
+    {
+      "iconType": "zap",
+      "title": "AI Workflow Design ",
+      "description": "Agents, chains, automated pipelines"
+    },
+    {
+      "iconType": "database",
+      "title": "AI Strategy & Consulting",
+      "description": "Model selection, optimization, integration"
+    }
+  ],
+  "servicesHeading": "What I",
+  "servicesHeadingHighlight": "do best",
+  "servicesSubtitle": " I offer a comprehensive range of services to help bring your digital vision to life.\n",
+  "services": [
+    {
+      "iconType": "monitor",
+      "title": "",
+      "description": "",
+      "features": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "iconType": "smartphone",
+      "title": "",
+      "description": "",
+      "features": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "iconType": "layers",
+      "title": "",
+      "description": "",
+      "features": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "iconType": "trending-up",
+      "title": "",
+      "description": "",
+      "features": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "workHeading": "Selected",
+  "workHeadingHighlight": "works",
+  "workSubtitle": "",
+  "notionPortfolioLink": "https://www.notion.so/invite/59083c0bdc56760a8dd2e5d45af43f7abcbcd8bf",
+  "projects": [
+    {
+      "title": "",
+      "category": "",
+      "description": "",
+      "tags": [],
+      "liveUrl": "",
+      "githubUrl": "",
+      "imageUrl": "",
+      "gradientColor": "from-violet-500 to-purple-600",
+      "featured": true
+    },
+    {
+      "title": "",
+      "category": "",
+      "description": "",
+      "tags": [],
+      "liveUrl": "",
+      "githubUrl": "",
+      "imageUrl": "",
+      "gradientColor": "from-pink-500 to-rose-600",
+      "featured": true
+    }
+  ],
+  "testimonialsHeading": "What clients",
+  "testimonialsHeadingHighlight": "say",
+  "testimonialsSubtitle": "",
+  "testimonials": [
+    {
+      "name": "",
+      "role": "",
+      "company": "",
+      "content": "",
+      "rating": 5,
+      "avatarUrl": ""
+    },
+    {
+      "name": "",
+      "role": "",
+      "company": "",
+      "content": "",
+      "rating": 5,
+      "avatarUrl": ""
+    },
+    {
+      "name": "",
+      "role": "",
+      "company": "",
+      "content": "",
+      "rating": 5,
+      "avatarUrl": ""
+    }
+  ],
+  "contactHeading": "Let's work",
+  "contactHeadingHighlight": "together",
+  "contactSubtitle": "Have a project in mind? Let's discuss how I can help bring your vision to life.",
+  "contactEmail": "udefavour447@gmail.com",
+  "contactPhone": "+2348147012132",
+  "contactLocation": "Abakaliki, Nigeria ",
+  "socialLinks": [
+    {
+      "platform": "GitHub",
+      "url": ""
+    },
+    {
+      "platform": "LinkedIn",
+      "url": ""
+    },
+    {
+      "platform": "Twitter",
+      "url": ""
+    },
+    {
+      "platform": "Dribbble",
+      "url": ""
+    }
+  ],
+  "contactFormEnabled": true,
+  "footerTagline": "",
+  "footerCopyright": "",
+  "footerDesignCredit": "",
+  "accentColor": "#8b5cf6",
+  "secondaryAccentColor": "#ec4899",
+  "fontFamily": "Inter",
+  "darkMode": true,
+  "resumeUrl": ""
+}    <!-- Midjourney → Photorealistic Portrait -->
     <div class="card" data-category="Midjourney">
       <div class="category">Midjourney</div>
       <div class="title">Photorealistic Portrait (Rank-1 on Explore)</div>
